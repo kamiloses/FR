@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 390px;
+  width: 79.3vw;
+  background-color: #1f2937;
+  border-bottom: 1px solid #374151;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friendhub {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #60a5fa;
+  letter-spacing: 1px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-container input {
+  width: 15rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #4b5563;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: #374151;
+  color: #f3f4f6;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.search-container input::placeholder {
+  color: #9ca3af;
+}
+
+.search-container input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
+  outline: none;
+}
+
+.search-button {
+  background-color: #60a5fa;
+  color: #1f2937;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #3b82f6;
+}
