@@ -4,10 +4,23 @@
     <textarea placeholder="What's on your mind ?"></textarea>
   </div>
 
-
-
+<!--todo track by (for)-->
+  @if (isLoading()) {
+    <div class="loading-message">
+      ⏳ Loading posts...
+    </div>}
+  @else if (serverError()) {
+    <div class="error-message">
+      <span class="error-message-icon">⚠️</span>
+      {{ serverError() }}
+      <button (click)="reloadPosts()">Try Again ...</button>
+    </div>
+  }
+  @else {
     @for (post of fetchedPosts(); track post.id) {
       <app-post [post]="post"></app-post>
+    }
+
   }
 
 
