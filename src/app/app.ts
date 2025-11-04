@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {Header} from './header/header';
+import {Header} from './header/header.component';
 import {LeftSidebar} from './left-sidebar/left-sidebar';
 import {RightSidebar} from './right-sidebar/right-sidebar';
 
