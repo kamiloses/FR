@@ -18,7 +18,7 @@ export class PostListService {
   getAllPosts():Observable<PostResponseModel[]> {
     const username = "kamilosesx"
     return this.http.get<PostResponseModel[]>(`${this.apiUrl}?username=${username}`
-    ).pipe(timeout(4000));
+    ); //todo pipe(timeout)
   } //todo jak to jest ze timeout bez new sie odwołuje
 
   sendPost(text:string):Observable<any>{

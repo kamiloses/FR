@@ -77,6 +77,9 @@ button:hover {
 }
 
 .active {
-  color: #f97316;
+  color: cornflowerblue;
   font-weight: bold;
+  background-color: rgba(100, 149, 237, 0.2);
+  border-radius: 8px;
 }
+
